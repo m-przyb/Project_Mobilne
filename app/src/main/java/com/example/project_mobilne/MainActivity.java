@@ -18,16 +18,15 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
         });
-        Button buttonList = (Button) findViewById(R.id.button_list);
-        buttonList.setOnClickListener(view -> {
-            Intent intent = new Intent(this , Activity_shop.class);
-            startActivity(intent);
-
-        });
         Button buttonCalorie = (Button) findViewById(R.id.calorie_button);
         buttonCalorie.setOnClickListener(view -> {
             Intent intent = new Intent(this , Calorie_layout.class);
             startActivity(intent);
     });
+        Button buttonFat= (Button) findViewById(R.id.fat_button);
+        buttonFat.setOnClickListener(view -> {
+            Intent intent = new Intent(this , Fat_percentage.class);
+            startActivity(intent);
+        });
     }
 }

@@ -8,10 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Project_Mobilne">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".Fat_percentage"></activity>
         <activity android:name=".Calorie_layout" />
-        <activity android:name=".Activity_shop" />
         <activity android:name=".activity_bmi" />
         <activity android:name=".MainActivity">
             <intent-filter>
