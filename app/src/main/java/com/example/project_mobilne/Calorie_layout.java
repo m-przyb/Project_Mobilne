@@ -36,12 +36,10 @@ public class Calorie_layout extends AppCompatActivity implements CompoundButton.
     private EditText Weight;
     private Button Calculate;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calorie_layout);
-
 
         spinner = (Spinner) findViewById(R.id.spinner);
         spinner2 = (Spinner) findViewById(R.id.spinner2);
@@ -66,7 +64,6 @@ public class Calorie_layout extends AppCompatActivity implements CompoundButton.
             }
         });
 
-
         spinner.setAdapter(new ArrayAdapter<>(Calorie_layout.this, android.R.layout.simple_spinner_item, myList3));
         MaleBTN.setOnCheckedChangeListener(this);
         FemaleBTN.setOnCheckedChangeListener(this);
@@ -83,7 +80,6 @@ public class Calorie_layout extends AppCompatActivity implements CompoundButton.
                     Multiplier3 = (float)0.85;
                 }
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
